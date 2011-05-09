@@ -1,4 +1,4 @@
-require 'load_paths'
+require File.expand_path('../load_paths', __FILE__)
 require 'sinatra/base'
 require 'padrino-core/application/routing'
 

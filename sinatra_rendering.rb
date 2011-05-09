@@ -1,4 +1,4 @@
-require 'load_paths'
+require File.expand_path('../load_paths', __FILE__)
 require 'sinatra/base'
 require 'padrino-core/application/rendering'
 require 'haml'
@@ -12,6 +12,10 @@ require 'haml'
 #
 class MyApp < Sinatra::Application
   register Padrino::Rendering
+
+  get "/utf-8" do
+    render :utf8
+  end
 
   get "/" do
     "Basic text"
