@@ -7,11 +7,11 @@ require 'padrino-core'
 class PadrinoBasic < Padrino::Application
 
   get :index, :map => '/' do
-    "Edit me... Im reloadable!"
+    "Edit ... Im reloadable!"
   end
 end
 
 PadrinoBasic.run!(:port => 3000)
 # or
-# Padrino.mount_core("PadrinoBasic")
+# Padrino.mount("PadrinoBasic").to("/")
 # Padrino.run!(:port => 3000) unless Padrino.loaded?
