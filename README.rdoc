@@ -1,8 +1,0 @@
-== Some Padrino/Sinatra Single File Apps
-
-* Install Bundler: $ sudo gem install bundler
-* Edit Gemfile
-* Run: $ bundle install
-* Run an app with: $ ruby app_name.rb
-
-*WARNING*: at the moment all examples needs padrino edge!
